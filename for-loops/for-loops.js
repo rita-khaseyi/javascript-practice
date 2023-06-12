@@ -4,7 +4,7 @@ function iterate(array) {
        
         array[x] +=1;
        
-        
+    
     }
     return array
 }
@@ -126,24 +126,27 @@ addition();
 
 //Write a for loop that logs the numbers 1 to 100 to the console, but logs "Fizz" for multiples of 3, "Buzz" for multiples of 5, 
 //and "FizzBuzz" for multiples of both 3 and 5.
-function multiples() {
-for (let x = 0; x <+100; x++) {
-    if ((x %3==0 && x %5==0) ) {
-        console.log("fizzbuzz");
-    }
-    else if (x %3==0) {
-        console.log("fizz")
-    }
-    else if (x %5==0) {
-        console.log("buzz")
-    }
-    else{
-        console.log(x)
-    }
+function fizzBuzz() {
+    
+
+sum=0;
+for (let g = 0; g <=100; g++) {
+   if (g %3==0 && g %5==0) {
+    console.log("FizzBuzz");
+   }
+   else if (g %3==0) {
+    console.log("Fizz");
+   }
+   else if (g %5==0) {
+    console.log("Buzz");
+   }
+   else {
+    console.log(g);
+   }
+   
     
 }
 }
-multiples();
 
 
 
@@ -230,3 +233,55 @@ function stringcheck(array) {
 }
 let strn=["Anita","Annet","Aliyah","Rita","ryan","alpha"];
 stringcheck(strn);
+
+//Write a for loop that logs the numbers from 1 to 10 to the console.
+for(let i=0; i<=10;i++){
+    console.log(i)
+}
+
+
+//Write a for loop that logs the even numbers from 2 to 10 to the console.
+// for(let x=2;x<=10;x++){
+//     if (x %2==0) {
+//        console.log(x) 
+//     }
+// }
+for(let x=2)
+
+//Write a for loop that logs the numbers from 10 to 1 to the console.
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+  }
+
+//Write a for loop that logs the odd numbers from 1 to 9 to the console.
+for(let a=1;a<=9;a++){
+    if(a %2!=0){
+        console.log(a)
+    }
+}
+//Write a for loop that logs the multiples of 3 from 3 to 30 to the console.
+function multiples() {
+    for(let s=3;s<=30;s++){
+        if(s %3==0){
+            console.log(s)
+        }
+    }
+}
+multiples()
+
+//Write a for loop that logs the square of each number from 1 to 10 to the console.
+for(let z=1;z<=10;z++){
+    console.log(z*z)
+}
+
+//Write a for loop that logs the cube of each number from 1 to 10 to the console
+for(let x=1;x<=10;x++){
+    console.log(x*x*x)
+}
+
+//Write a for loop that logs the sum of the numbers from 1 to 10 to the console.
+let sums = 0;
+for (let i = 1; i <= 10; i++) {
+  sums += i;
+}
+console.log(sums);
